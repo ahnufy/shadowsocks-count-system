@@ -1,0 +1,406 @@
+/*全局样式开始*/
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif";
+    font-weight: normal;
+    background-color: #f5f8fa;
+}
+
+a {
+    color: #cf4646;
+}
+
+a:hover,
+a:focus {
+    color: #A62C2C;
+    text-decoration: none;
+}
+
+/*菜单右浮动*/
+@media (min-width: 768px) {
+    .site-navbar .navbar-nav {
+        float: right !important;
+    }
+
+    .navbar {
+        border-radius: 0px;
+    }
+}
+
+
+/*全局样式结束*/
+
+/*navbar样式开始*/
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    background-color: #cf4646;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #efefef;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #e8e8e8;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #CA3131;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: white;
+}
+
+/*navbar样式结束*/
+
+/*jumbotron样式开始*/
+.jumbotron {
+    text-align: center;
+    background-color: #cf4646;
+    color: #fff;
+}
+
+.jumbotron .lead em {
+    display: none;
+}
+
+.white-under {
+    color: white;
+    text-decoration: underline;
+}
+
+.jumbotron .logo {
+    width: 100%;
+    max-width: 200px;
+}
+
+.jumbotron .btn-getting-started {
+    color: #efbfbf;
+    border: none;
+    box-shadow: inset 0 0 0 2px #efbfbf;
+    border-radius: 2px;
+    background-color: transparent;
+    margin-top: 26px;
+}
+
+.jumbotron .btn-getting-started:hover,
+.jumbotron .btn-getting-started:active {
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+    background-color: transparent;
+}
+
+/*jumbotron样式结束*/
+
+/*footer 样式开始*/
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #aaa;
+    padding-bottom: 30px;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*footer 样式结束*/
+
+/*这里是几个板块的相册的公用样式定义开始*/
+.my-pic-row {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.my-pic-row .thumbnail {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.my-pic-row .my-text {
+    background-color: white;
+    padding: 10px;
+    color: #cf4646;
+}
+
+.my-pic-row .my-bar {
+    background-color: white;
+    padding: 10px;
+}
+
+.my-thumbnail {
+    border: none;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.my-title {
+    color: #cf4646;
+}
+
+.my-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.my-pic-row {
+    background-color: #f5f8fa;
+    padding: 0px;
+}
+
+.my-pic-row .item {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 0;
+}
+
+.my-pic-row .item .thumbnail, .my-pic-row .thumbnail {
+    padding: 10px;
+    border-radius: 0;
+}
+
+.my-a-block {
+    display: block;
+
+}
+
+.col-lg-3 .my-title, .col-md-4 .my-title, .col-sm-4 .my-title {
+    padding-left: 15px !important; /*将左右两个小边栏的标题强制和内容对齐*/
+}
+
+/*这里是几个板块的相册的公用样式定义结束*/
+
+/*书籍阅读菜单开始*/
+.my-book-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #cf4646;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+.my-book-menu span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+/*书籍阅读菜单结束*/
+
+.loveyou:before {
+  content: "\2665";
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  padding-left: 5px;
+  padding-right: 5px;
+  top:-1px;
+  position: relative;
+  color: #cf4646;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+}
+
+/*对话框部分*/
+
+.conversation  {
+  overflow: hidden;
+}
+.conversation .avatar {
+  float: left;
+  position: relative;
+  border: 6px solid #e7e7e7;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  top: 5px;
+}
+.conversation.right .avatar {
+  float: right;
+  position: relative;
+  border: 6px solid #e7e7e7;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  top: -5px;
+}
+.conversation .avatar img{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.conversation .avatar:before {
+  content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #e7e7e7;
+    border-color: rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0) #e7e7e7;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: -21px;
+}
+
+.conversation.right .avatar:before {
+  content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #e7e7e7 transparent transparent;
+    border-color: rgba(255,255,255,0) #e7e7e7 rgba(255,255,255,0) rgba(255,255,255,0);
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: -21px;
+}
+.conversation .say {
+  display: block;
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+    padding-top: 25px;
+    margin-left: 100px;
+}
+.conversation .say span{
+  display: block;
+  font-size: 15px;
+  font-style: normal;
+  color: #cf4646;
+}
+.conversation.right .say {
+    display: block;
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+    padding-top: 25px;
+    margin-right: 100;
+    margin-left: 0;
+}
+
+/*二维码旁边的高度*/
+.h220 {
+  height: 220px;
+  text-align: center;
+}
+.pay-btn-wraper {
+  height: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.pay-txt-wraper {
+  height: 150px;
+}
+.pay-txt-wraper div {
+  height: 50px;
+  line-height: 50px;
+}
+
+/*通用的圆角*/
+.radius {
+  border-radius: 50%;
+}
+.wh150 {
+  width: 150px;
+  height: 150px;
+}
+.text-center {
+  text-align: center;;
+}
+
+.jumbotron {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.big-text {
+  font-size: 16px;
+}
+.gray-text {
+  color: #9a9a9a;
+  background-color: white;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.gray-text .title {
+  line-height: 35px;
+}
+
+.btn.btn-success.buy {
+  width: 100px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.conversation .order-logo {
+  float: left;
+  position: relative;
+  border: 6px solid #e7e7e7;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+}
+
+.conversation .order-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.conversation .order-line {
+  display: block;
+  font-size: 13px;
+  line-height: 1.8;
+  font-style: italic;
+  padding-top: 10px;
+  margin-left: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.discount {
+  color: red;
+}

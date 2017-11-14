@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^网站名称已替换.org$ [NC]
+RewriteRule ^(.*)$ http://网站名称已替换.org/$1 [L,R=301]

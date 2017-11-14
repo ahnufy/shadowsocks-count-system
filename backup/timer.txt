@@ -1,0 +1,18 @@
+// 这是每10分钟启动一次流量统计和重启
+// 这是每天6点到8点，分别启动和关闭服务器的脚本
+// 这里有个时间计算器
+
+http://tool.lu/crontab/ 这个手册不错
+
+crondab -e 填入：
+*/10 * * * * curl https://speedshadow.org/admin/timer/go.php
+0 6 * * * curl http://45.76.99.89/SpeedShadow/admin/ss-api/free/start.php
+0 9 * * * curl http://45.76.99.89/SpeedShadow/admin/ss-api/free/stop.php
+CRON_TZ=Asia/Shanghai
+
+注意需要设置时区
+注意，写完了需要重启哈
+/etc/init.d/cron restart
+
+// 注意服务器时区问题
+注意，/etc/shadowsocks.json 文件需要权限哈
