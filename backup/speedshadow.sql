@@ -102,8 +102,8 @@ CREATE TABLE `node_list` (
 --
 
 INSERT INTO `node_list` (`id`, `update_time`, `ip`, `address`, `user_count_limit`, `user_count_now`, `country`, `node_group`) VALUES
-(1, '2017-02-10 15:37:14', '45.63.82.86', 'us.网站名称已替换.online', 500, 3, '美国', 1),
-(2, '2017-02-10 15:37:14', '45.76.99.89', 'jp.网站名称已替换.online', 500, 3, '日本', 1);
+(1, '2017-02-10 15:37:14', 'IP', 'us.网站名称已替换.online', 500, 3, '美国', 1),
+(2, '2017-02-10 15:37:14', 'IP', 'jp.网站名称已替换.online', 500, 3, '日本', 1);
 
 -- --------------------------------------------------------
 
@@ -181,8 +181,6 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `reg_time`, `username`, `update_time`, `email`, `password`, `ss_password`, `code`, `recommender_email`) VALUES
-(116, '2017-02-10 11:40:42', 'leiquan', '2017-02-10 11:40:42', 'leiquan@live.com', '782d552ea87eaefa1230342a3edf88d1', 'cUwzRnBIY24=', '', ''),
-(117, '2017-02-10 12:00:45', 'chenjianwei', '2017-02-10 12:00:45', 'sohucw@163.com', '202cb962ac59075b964b07152d234b70', 'S0pDeDhmYXA=', '', ''),
 (118, '2017-02-10 15:36:19', 'webxzy@qq.com', '2017-02-10 15:36:19', 'webxzy@qq.com', 'e10adc3949ba59abbe56e057f20f883e', 'N3BSRGpDT20=', '', 'webxzy@qq.com');
 
 -- --------------------------------------------------------
